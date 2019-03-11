@@ -8,3 +8,48 @@
 @import "components/grid";
 @import "components/navigation";
 @import "components/typography";
+
+html {
+    font-size: 16px;
+    color: #000;
+}
+
+@font-face {
+    font-family: HKKontrast;
+    src: url(../../assets/fonts/HKKontrast-bold-webfont.woff);
+  }
+
+#hero-container {
+    height: 100vh;
+    background-color: #E7CAC2;
+    padding: 0 4rem 0 4rem;
+
+    #header-intro {
+        height: 7.1875rem;
+        display: flex;
+        align-items: center;
+    }
+
+    #navigation-container {
+        height: calc(100% - 7.1875rem);
+        display: flex;
+        align-items: flex-end;
+        font-family: HKKontrast;
+
+        #navigation-list {
+            list-style: none;
+            padding: 0 0 3.125rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            width: 60%;
+    
+            li {
+                // margin-left: 1.25rem;
+                margin-right: 1.27rem;
+                font-size: 2.3rem;
+            }
+        }
+    }
+
+    
+}
