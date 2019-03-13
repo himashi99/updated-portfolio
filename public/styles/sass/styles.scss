@@ -30,26 +30,40 @@ html {
         align-items: center;
     }
 
-    #navigation-container {
+    #main-wrapper {
+        width: 100%;
         height: calc(100% - 7.1875rem);
         display: flex;
-        align-items: flex-end;
-        font-family: HKKontrast;
 
-        #navigation-list {
-            list-style: none;
-            padding: 0 0 3.125rem 0;
+        #navigation-container {
+            height: 100%;
             display: flex;
-            flex-wrap: wrap;
-            width: 60%;
+            align-items: flex-end;
+            font-family: HKKontrast;
+            width: 65%;
+
+            #navigation-list {
+                list-style: none;
+                padding: 0 0 3.125rem 0;
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    margin-left: 1.25rem;
+                    margin-right: 1.27rem;
+                    font-size: 2.3rem;
+                }
+            }
+        }
+
+        #content-container {
+            // background-color: white;
+            width: 40%;
+            height: 100%;
     
-            li {
-                // margin-left: 1.25rem;
-                margin-right: 1.27rem;
-                font-size: 2.3rem;
+            p {
+                font-size: 20px;
             }
         }
     }
-
-    
 }

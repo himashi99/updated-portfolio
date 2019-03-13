@@ -21,22 +21,35 @@ html {
   display: flex;
   align-items: center;
 }
-#hero-container #navigation-container {
+#hero-container #main-wrapper {
+  width: 100%;
   height: calc(100% - 7.1875rem);
+  display: flex;
+}
+#hero-container #main-wrapper #navigation-container {
+  height: 100%;
   display: flex;
   align-items: flex-end;
   font-family: HKKontrast;
+  width: 65%;
 }
-#hero-container #navigation-container #navigation-list {
+#hero-container #main-wrapper #navigation-container #navigation-list {
   list-style: none;
   padding: 0 0 3.125rem 0;
   display: flex;
   flex-wrap: wrap;
-  width: 60%;
 }
-#hero-container #navigation-container #navigation-list li {
+#hero-container #main-wrapper #navigation-container #navigation-list li {
+  margin-left: 1.25rem;
   margin-right: 1.27rem;
   font-size: 2.3rem;
+}
+#hero-container #main-wrapper #content-container {
+  width: 40%;
+  height: 100%;
+}
+#hero-container #main-wrapper #content-container p {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
